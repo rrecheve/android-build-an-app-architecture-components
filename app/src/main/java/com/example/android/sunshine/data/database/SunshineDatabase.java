@@ -29,7 +29,7 @@ import android.util.Log;
  */
 
 // List of the entry classes and associated TypeConverters
-@Database(entities = {WeatherEntry.class}, version = 1)
+@Database(entities = {WeatherEntry.class}, version = 1, exportSchema = false)
 @TypeConverters(DateConverter.class)
 public abstract class SunshineDatabase extends RoomDatabase {
 
